@@ -17,9 +17,10 @@ const App = () => {
   };
 
   const handleLaps = ()=> {
-    const lastLapTime = laps.length ? laps.reduce((acc, curr) => acc + curr, 0) : 0;
-    const lapTime = time - lastLapTime;
-    setLaps((prevLaps) => [...prevLaps, lapTime]);
+    // const lastLapTime = laps.length ? laps.reduce((acc, curr) => acc + curr, 0) : 0;
+    // const lapTime = time - lastLapTime;
+    // setLaps((prevLaps) => [...prevLaps, lapTime]);
+    setLaps((prevLaps) => [...prevLaps, time]);
   }
 
   const handleReset = () => {
